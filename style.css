@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'poppins',sans-serif;
+}
+.header{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 70px;
+    background-color: rgb(254, 162, 178);
+    box-shadow: 0 25px 90px rgb(247, 125, 145);
+    position: relative;
+    border-bottom:2px solid rgb(215, 112, 75);
+}
+ul li{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 7px;
+}
+ul li a{
+    color: black;
+    transition: .3s;
+}
+ul li a:hover{
+    color: rgb(93, 100, 198)
+}
+.header .fa-bars{
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid rgb(173, 15, 15);
+    display: block;
+    color: rgb(148, 18, 39);
+    transition: .4s;
+}
+.header .fa-bars:hover{
+    background-color:rgb(172, 71, 71);
+    color: rgb(0, 0, 0);
+}
+.login{
+    background: transparent;
+    margin: 20px;
+    border: 2px solid rgb(214, 69, 69);
+    height: 35px;
+    width:140px;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+.login:hover{
+    color: rgb(200, 60, 146);
+}
+.container .header .logo img{
+    height: 120px;
+    width: 550px;
+}
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+.hero .element{
+    position: absolute;
+    height: 450px;
+    width: 383px;
+    top:30%;
+    left:390px;
+    
+}
+@keyframes anim{
+    0%{
+        transform: translateX(10px);
+    }
+    70%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(8px);
+    }
+}
+.hero .image img{
+    height: 300px;
+    width:350px;
+    right: 10px;
+    left:-100px;
+    top:-30%;  
+    position: relative;
+    animation: anim 6s infinite linear;
+}
+.hero .image {
+    height: 100%;
+    width: 50px; 
+    right: 30px;
+    top:40%;   
+}
+.hero .content{
+    width: 50%;
+    margin:100px -80px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap:20px;
+}
+.hero .content h4{
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+.hero .content h1{
+    font-size: 3rem;
+    line-height:3.3rem;
+    color: red;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.hero .content h1 span{
+    font-weight: 600;
+}
+.hero .content p{
+    color: rgb(110, 104, 104);
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.btn{
+    padding: 8px 18px;
+    margin-top: 20px;
+    border: 2px solid rgb(30, 1, 24);
+    width: 180px;
+    background: rgb(247, 125, 145);
+    letter-spacing: 3px;
+    color: rgb(9, 1, 1);
+    font-size: 1.1rem;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: rgb(32, 134, 190);
+    border-color: rgb(32, 134, 190);
+    cursor: pointer;
+
+}
+.hero{
+    flex-;
+}
+
+@media(max-width:1100px){l
+    .header .fa-bars{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background-color: white;
+        border-bottom: 2px solid rgb(187, 99, 66);
+        background: rgb(255, 208, 208);
+        opacity: 0;
+        z-index: 99;
+    }
+    ul li{
+        display: block;
+        margin:20px 0;
+        border-bottom:  0.2px solid rgb(160, 116, 116);
+        padding: 10px ;
+        padding-left: 10%;
+    }
+    ul li:last-child{
+        border: none;
+
+    }
+    ul li a{
+        padding: 10px 0;
+    }
+    .login{
+        padding: 0px 0%;
+    }
+    .show{
+        opacity:1;
+    }
+    .hero .content{
+        margin: 40px 0;
+        margin-top: 20px;
+    }
+
+}

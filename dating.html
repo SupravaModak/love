@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/wysiwyg_imageupload/What%20are%20the%20signs%20of%20love_.jpg?itok=xVeGE9WZ" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="login">Login/Register</button></li>
+            </ul>
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="hero">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG92ZSUyMGhlYXJ0fGVufDB8fDB8fHww" alt="" class="element">
+            <div class="image">
+                <img src="https://wallpapers.com/images/hd/lover-pictures-0bu1rrslo4njr9jw.jpg" alt="" >
+            </div>
+            <div class="content">
+                <h4>Awesome Dating</h4>
+                <h1>Dating is <span>Easy Way</span> To Find Someone</h1>
+                <p>You are all that I ever needed.You know what they say about love...it's a roller coaster ride. But with you, every twist and turn feels like a breeze, because I know I have you right by my side, holding my hand through it all. You've brought so much joy and meaning into my life, and I'm beyond lucky to call you mine. I adore you more than words can express, and I promise to cherish you every single day.</p>
+                <button class="btn">Details</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let bars=document.querySelector(".header .fa-bars");
+        let menu=document.querySelector("ul");
+        bars.addEventListener("click",function(){
+            menu.classList.toggle("show");
+        })
+    </script>
+</body>
+</html>
